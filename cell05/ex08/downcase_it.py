@@ -1,6 +1,7 @@
 import sys
 
-if len(sys.argv) == 2:
-    print(sys.argv[1].lower())
+if len(sys.argv) < 3:
+    print("three two one")
 else:
-    print("Hello world")
+    for param in reversed(sys.argv[1:]):
+        print(param)
